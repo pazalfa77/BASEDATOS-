@@ -34,11 +34,11 @@ public class BaseDeDatosListar {
 
 	@Test
 	public void cuantoAgrega5EnotncesListaSize5() {
-		this.base.agregar(new Dato("A1", "Datoss"));
+		this.base.agregar(new Dato("A1", "Datos"));
 		this.base.agregar(new Dato("A3", "Datos"));
-		this.base.agregar(new Dato("A2", "Datoss"));
-		this.base.agregar(new Dato("A4", "Datoss"));
-		this.base.agregar(new Dato("A5", "Datoss"));
+		this.base.agregar(new Dato("A2", "Datos"));
+		this.base.agregar(new Dato("A4", "Datos"));
+		this.base.agregar(new Dato("A5", "Datos"));
 		int largo = this.base.listar().size();
 		assertTrue(" es"+ largo+"Pero deberia ser 5",largo==5);
 	}

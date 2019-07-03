@@ -19,8 +19,17 @@ public class BaseDeDatosAgregar {
 			}
 
 	@Test
-	public void cuandoAgrege1EntoncesTrue(){
-		boolean retorno=this.base.agregar(new Dato("A1", "Datoss"));
+	public void cuandoAgregegaUndatoEntoncesTrue(){
+		boolean retorno=this.base.agregar(new Dato("A1", "Datos"));
+		assertTrue(retorno);
+	}
+	public void cuandoAgregaunDatoNullEntoncesTrue(){
+		boolean retorno=this.base.agregar(new Dato("", "Datos"));
+		assertTrue(retorno);
+	}
+	
+	public void cuandoAgregaunDatolargomayoraunoTrue(){
+		boolean retorno=this.base.agregar(new Dato(null, "Datos"));
 		assertTrue(retorno);
 	}
 

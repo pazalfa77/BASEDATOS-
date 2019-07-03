@@ -26,7 +26,7 @@ public class BaseDeDatosEliminar {
 
 	@Test
 	public void cuandoEliminaUnoTrue4() {
-		this.base.delete("A1");
+		this.base.eliminar("A1");
 		int largo = this.base.listar().size();
 		assertTrue(" es"+ largo+"Pero deberia ser 4",largo==4);
 		
@@ -34,13 +34,13 @@ public class BaseDeDatosEliminar {
 	
 	@Test
 	public void cuandoEliminaUnoTrue() {
-		boolean retorno=this.base.delete("A3");
+		boolean retorno=this.base.eliminar("A3");
 		assertTrue(retorno);		
 	}
 	
 	@Test
 	public void cuandoNoEliminaFalse() {
-		boolean retorno=this.base.delete("A6");
+		boolean retorno=this.base.eliminar("A6");
 		assertFalse(retorno);		
 	}
 
